@@ -1,0 +1,60 @@
+D:\IAUnitBv\Hangman\Hangman\bin\Debug\Hangman.exe.config
+D:\IAUnitBv\Hangman\Hangman\bin\Debug\Hangman.exe
+D:\IAUnitBv\Hangman\Hangman\bin\Debug\Hangman.pdb
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Hangman.csproj.AssemblyReference.cache
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\AboutWindow.g.cs
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\CategoryWindow.g.cs
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\ChooseWindow.g.cs
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\HomeWindow.g.cs
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\SignInWindow.g.cs
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\SignUpWindow.g.cs
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\StartWindow.g.cs
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\StatisticsWindow.g.cs
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\App.g.cs
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Hangman_MarkupCompile.cache
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Hangman_MarkupCompile.lref
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\AboutWindow.baml
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\CategoryWindow.baml
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\ChooseWindow.baml
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\HomeWindow.baml
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\SignInWindow.baml
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\SignUpWindow.baml
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\StartWindow.baml
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Views\StatisticsWindow.baml
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Hangman.g.resources
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Hangman.Properties.Resources.resources
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Hangman.csproj.GenerateResource.cache
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Hangman.csproj.CoreCompileInputs.cache
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Hangman.exe
+D:\IAUnitBv\Hangman\Hangman\obj\Debug\Hangman.pdb
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\bin\Debug\Hangman.exe.config
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\bin\Debug\Hangman.exe
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\bin\Debug\Hangman.pdb
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Hangman.csproj.AssemblyReference.cache
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\AboutWindow.g.cs
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\CategoryWindow.g.cs
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\ChooseWindow.g.cs
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\HomeWindow.g.cs
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\SignInWindow.g.cs
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\SignUpWindow.g.cs
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\StartWindow.g.cs
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\StatisticsWindow.g.cs
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\App.g.cs
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Hangman_MarkupCompile.cache
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Hangman_MarkupCompile.lref
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\AboutWindow.baml
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\CategoryWindow.baml
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\ChooseWindow.baml
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\HomeWindow.baml
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\SignInWindow.baml
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\SignUpWindow.baml
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\StartWindow.baml
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Views\StatisticsWindow.baml
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Hangman.g.resources
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Hangman.Properties.Resources.resources
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Hangman.csproj.GenerateResource.cache
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Hangman.csproj.CoreCompileInputs.cache
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Hangman.exe
+D:\IAUnitBv\ANUL 2\SEMESTRUL 2\xAjutator\Hangman\Hangman\obj\Debug\Hangman.pdb

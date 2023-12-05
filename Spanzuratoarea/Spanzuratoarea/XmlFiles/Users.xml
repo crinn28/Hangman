@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<Users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <User>
+      <Name>Anne</Name>
+      <ImageIndex>0</ImageIndex>
+      <GameProperty>
+        <LevelProperty>0</LevelProperty>
+        <MistakesProperty>0</MistakesProperty>
+        <CategoryProperty>Cars</CategoryProperty>
+        <WordOnDisplay />
+        <WordToGuess />
+        <SecondsRemaining>0</SecondsRemaining>
+        <SavedGame>false</SavedGame>
+      </GameProperty>
+      <StatisticsProperty>
+        <WonGamesAll>0</WonGamesAll>
+        <LostGamesAll>0</LostGamesAll>
+        <WonGamesCars>0</WonGamesCars>
+        <LostGamesCars>1</LostGamesCars>
+        <WonGamesMountains>0</WonGamesMountains>
+        <LostGamesMountains>0</LostGamesMountains>
+        <WonGamesMovies>0</WonGamesMovies>
+        <LostGamesMovies>0</LostGamesMovies>
+        <WonGamesRivers>0</WonGamesRivers>
+        <LostGamesRivers>0</LostGamesRivers>
+        <WonGamesStates>0</WonGamesStates>
+        <LostGamesStates>0</LostGamesStates>
+      </StatisticsProperty>
+    </User>
+    <User>
+      <Name>Crina8</Name>
+      <ImageIndex>2</ImageIndex>
+      <GameProperty>
+        <LevelProperty>0</LevelProperty>
+        <MistakesProperty>0</MistakesProperty>
+        <CategoryProperty>Movies</CategoryProperty>
+        <WordOnDisplay>＿ ＿ ＿ ＿ </WordOnDisplay>
+        <WordToGuess>FORD</WordToGuess>
+        <SecondsRemaining>46</SecondsRemaining>
+        <SavedGame>true</SavedGame>
+      </GameProperty>
+      <StatisticsProperty>
+        <WonGamesAll>0</WonGamesAll>
+        <LostGamesAll>0</LostGamesAll>
+        <WonGamesCars>1</WonGamesCars>
+        <LostGamesCars>5</LostGamesCars>
+        <WonGamesMountains>0</WonGamesMountains>
+        <LostGamesMountains>1</LostGamesMountains>
+        <WonGamesMovies>0</WonGamesMovies>
+        <LostGamesMovies>0</LostGamesMovies>
+        <WonGamesRivers>0</WonGamesRivers>
+        <LostGamesRivers>0</LostGamesRivers>
+        <WonGamesStates>0</WonGamesStates>
+        <LostGamesStates>0</LostGamesStates>
+      </StatisticsProperty>
+    </User>
+    <User>
+      <Name>victoraas</Name>
+      <ImageIndex>5</ImageIndex>
+      <GameProperty>
+        <LevelProperty>0</LevelProperty>
+        <MistakesProperty>0</MistakesProperty>
+        <CategoryProperty>Cars</CategoryProperty>
+        <WordOnDisplay />
+        <WordToGuess />
+        <SecondsRemaining>0</SecondsRemaining>
+        <SavedGame>false</SavedGame>
+      </GameProperty>
+      <StatisticsProperty>
+        <WonGamesAll>0</WonGamesAll>
+        <LostGamesAll>0</LostGamesAll>
+        <WonGamesCars>1</WonGamesCars>
+        <LostGamesCars>0</LostGamesCars>
+        <WonGamesMountains>0</WonGamesMountains>
+        <LostGamesMountains>3</LostGamesMountains>
+        <WonGamesMovies>0</WonGamesMovies>
+        <LostGamesMovies>0</LostGamesMovies>
+        <WonGamesRivers>0</WonGamesRivers>
+        <LostGamesRivers>0</LostGamesRivers>
+        <WonGamesStates>0</WonGamesStates>
+        <LostGamesStates>2</LostGamesStates>
+      </StatisticsProperty>
+    </User>
+  </List>
+</Users>

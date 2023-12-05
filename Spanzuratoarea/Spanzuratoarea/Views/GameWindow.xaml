@@ -1,0 +1,139 @@
+﻿<Window x:Class="Spanzuratoarea.Views.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Spanzuratoarea.Views"
+        xmlns:ctx="clr-namespace:Spanzuratoarea.ViewModels"
+        mc:Ignorable="d"
+        Title="Hangman" Height="600" Width="800" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="7,7,7,7" Background="{TemplateBinding Background}">
+                            <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding  Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"  Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding  VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="FontSize" Value="35"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Spanzuratoarea;component/Images/bk.jpg"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="380"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="100" Background="Transparent" BorderBrush="Transparent" BorderThickness="1">
+            <MenuItem Header="File" FontSize="20" FontFamily="Algerian" Foreground="White" BorderThickness="1" Background="Transparent">
+                <MenuItem Header="New Game" Background="black"  Command="{Binding NewCommand}"/>
+                <MenuItem Header="Save" Background="black" Command="{Binding SaveCommand}"/>
+                <MenuItem Header="Statistics" Background="black" Command="{Binding StatisticsCommand}"/>
+                <MenuItem Header="Exit" Background="black" Command="{Binding ExitCommand}"/>
+            </MenuItem>
+            <MenuItem Header="Categories" FontSize="20" FontFamily="Algerian" Foreground="White" BorderThickness="1" Background="Transparent">
+                <MenuItem x:Name="AllMenuItem" Header="All" Background="black" IsCheckable="True" Command="{Binding SelectCategoryCommand}" CommandParameter="{Binding ElementName=AllMenuItem}" IsChecked="{Binding AllIsSelected}"/>
+                <MenuItem x:Name="CarsMenuItem" Header="Cars" Background="black" IsCheckable="True" Command="{Binding SelectCategoryCommand}" CommandParameter="{Binding ElementName=CarsMenuItem}" IsChecked="{Binding CarsIsSelected}"/>
+                <MenuItem x:Name="MountainsMenuItem" Header="Mountains" Background="black" IsCheckable="True" Command="{Binding SelectCategoryCommand}" CommandParameter="{Binding ElementName=MountainsMenuItem}" IsChecked="{Binding MountainsIsSelected}"/>
+                <MenuItem x:Name="MoviesMenuItem" Header="Movies" Background="black" IsCheckable="True" Command="{Binding SelectCategoryCommand}" CommandParameter="{Binding ElementName=MoviesMenuItem}" IsChecked="{Binding MoviesIsSelected}"/>
+                <MenuItem x:Name="RiversMenuItem" Header="Rivers" Background="black" IsCheckable="True" Command="{Binding SelectCategoryCommand}" CommandParameter="{Binding ElementName=RiversMenuItem}" IsChecked="{Binding RiversIsSelected}"/>
+                <MenuItem x:Name="StatesMenuItem" Header="States" Background="black" IsCheckable="True" Command="{Binding SelectCategoryCommand}" CommandParameter="{Binding ElementName=StatesMenuItem}" IsChecked="{Binding StatesIsSelected}"/>
+            </MenuItem>
+            <MenuItem Header="Help" FontSize="20" FontFamily="Algerian" Foreground="White" BorderThickness="1" Background="Transparent">
+                <MenuItem Header="About" Background="black" Command="{Binding AboutCommand}"/>
+            </MenuItem>
+        </Menu>
+
+        <Image Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Height="150" VerticalAlignment="Top" Source="{Binding UserImageSource}"/>
+
+        <Label Grid.Row="1" Grid.Column="0" FontSize="30" Foreground="White" FontFamily="Harrington" Content="Time remaining:" Width="250" Height="60" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Grid.Row="1" Grid.Column="0" FontSize="30" Foreground="White" FontFamily="Harrington"  Content="{Binding Timer}" Width="150" Height="60" VerticalAlignment="Top" HorizontalAlignment="Right" HorizontalContentAlignment="Center"/>
+
+        <Image Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Source="{Binding HangImageSource}" Margin="0, 50, 20, 100"/>
+
+        <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="110.9"/>
+                <RowDefinition Height="59.5"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" Grid.Column="0" Content="Username: " FontSize="20" Foreground="White" FontFamily="Harrington" HorizontalContentAlignment="Center" Margin="0,59.1,0.4,0.4" Grid.RowSpan="2"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="{Binding Name}" FontSize="20" Foreground="White" FontFamily="Harrington" HorizontalContentAlignment="Center" Margin="0,39.6,0.4,0.4" Grid.RowSpan="2"/>
+            <Label Grid.Row="1" Grid.Column="2" Content="Level: " FontSize="20" Foreground="White" FontFamily="Harrington" HorizontalContentAlignment="Center" Margin="0,59.1,-0.4,0.4" Grid.RowSpan="2"/>
+            <Label Grid.Row="2" Grid.Column="2" Content="{Binding Level}" FontSize="20" Foreground="White" FontFamily="Harrington" HorizontalContentAlignment="Center" Margin="0,39.6,-0.4,0.4" Grid.RowSpan="2"/>
+            <Label Grid.Row="1" Content="Category: " FontSize="20" Foreground="White" FontFamily="Harrington" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" Margin="138,59.1,0,0.4" Grid.RowSpan="2"/>
+            <Label Grid.Row="2" Content="{Binding CategoryLabel}" FontSize="20" Foreground="White" FontFamily="Harrington" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" Margin="138,39.6,0,0.4" Grid.RowSpan="2"/>
+            <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="7,39.6,6.6,0" Grid.RowSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="Qbtn" Content="Q" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Qbtn}" IsEnabled="{Binding EnabledLetter}"/>
+                    <Button x:Name="Wbtn" Content="W" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Wbtn}"/>
+                    <Button x:Name="Ebtn" Content="E" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Ebtn}"/>
+                    <Button x:Name="Rbtn" Content="R" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Rbtn}"/>
+                    <Button x:Name="Tbtn" Content="T" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Tbtn}"/>
+                    <Button x:Name="Ybtn" Content="Y" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Ybtn}"/>
+                    <Button x:Name="Ubtn" Content="U" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Ubtn}"/>
+                    <Button x:Name="Ibtn" Content="I" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Ibtn}"/>
+                    <Button x:Name="Obtn" Content="O" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Obtn}"/>
+                    <Button x:Name="Pbtn" Content="P" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Pbtn}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="Abtn" Content="A" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Abtn}"/>
+                    <Button x:Name="Sbtn" Content="S" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Sbtn}"/>
+                    <Button x:Name="Dbtn" Content="D" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Dbtn}"/>
+                    <Button x:Name="Fbtn" Content="F" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Fbtn}"/>
+                    <Button x:Name="Gbtn" Content="G" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Gbtn}"/>
+                    <Button x:Name="Hbtn" Content="H" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Hbtn}"/>
+                    <Button x:Name="Jbtn" Content="J" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Jbtn}"/>
+                    <Button x:Name="Kbtn" Content="K" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Kbtn}"/>
+                    <Button x:Name="Lbtn" Content="L" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Lbtn}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="Zbtn" Content="Z" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Zbtn}"/>
+                    <Button x:Name="Xbtn" Content="X" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Xbtn}"/>
+                    <Button x:Name="Cbtn" Content="C" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Cbtn}"/>
+                    <Button x:Name="Vbtn" Content="V" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Vbtn}"/>
+                    <Button x:Name="Bbtn" Content="B" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Bbtn}"/>
+                    <Button x:Name="Nbtn" Content="N" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Nbtn}"/>
+                    <Button x:Name="Mbtn" Content="M" FontFamily="Times New Roman" Style="{StaticResource ButtonStyle}" Command="{Binding PressCommand}" CommandParameter="{Binding ElementName=Mbtn}"/>
+                </StackPanel>
+            </StackPanel>
+            <Image HorizontalAlignment="Left" Height="30" Margin="38,28.8,0,0" Source="{Binding LifeImageSource[0]}" VerticalAlignment="Top" Width="49" Grid.Row="1" RenderTransformOrigin="1.241,0.64"/>
+            <Image HorizontalAlignment="Left" Height="30" Margin="87,28.8,0,0" Source="{Binding LifeImageSource[1]}" VerticalAlignment="Top" Width="51" Grid.Row="1"/>
+            <Image HorizontalAlignment="Left" Height="30" Margin="22.6,28.8,0,0" Source="{Binding LifeImageSource[2]}" VerticalAlignment="Top" Width="49" Grid.Row="1" RenderTransformOrigin="1.176,0.28" Grid.Column="1"/>
+            <Image HorizontalAlignment="Left" Height="30" Margin="76.6,28.8,0,0" Source="{Binding LifeImageSource[3]}" VerticalAlignment="Top" Width="51" Grid.Column="1" Grid.Row="1" RenderTransformOrigin="1.184,0.75"/>
+            <Image HorizontalAlignment="Left" Height="30" Margin="0,28.8,0,0" Source="{Binding LifeImageSource[4]}" VerticalAlignment="Top" Width="49" Grid.Column="2" Grid.Row="1"/>
+            <Image HorizontalAlignment="Left" Height="30" Margin="54,28.8,0,0" Source="{Binding LifeImageSource[5]}" VerticalAlignment="Top" Width="51" Grid.Column="2" Grid.Row="1"/>
+        </Grid>
+
+        <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" Margin="0, 30" Content="{Binding WordOnDisplay}" FontFamily="MV Boli" FontSize="30" Foreground="White" />
+    </Grid>
+</Window>
